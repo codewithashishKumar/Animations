@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010101;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    background: conic-gradient(blue, yellow, green, red);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
