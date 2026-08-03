@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Button</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #111827;
+        font-family: Arial, sans-serif;
+    }
+
+    .pulse {
+        padding: 16px 42px;
+        border: none;
+        border-radius: 50px;
+        background: #3b82f6;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+        animation: pulse 2s infinite;
+    }
+
+    .pulse:hover {
+        background: #193d76;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 0 rgba(59, 130, 246, .6);
+        }
+
+        66% {
+            transform: scale(1.01);
+            box-shadow: 0 0 25px rgba(107, 135, 180, 0.4);
+        }
+
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+        }
+    }
+</style>
+
+<body>
+    <button class="pulse">Hello!</button>
+</body>
+
+</html>
