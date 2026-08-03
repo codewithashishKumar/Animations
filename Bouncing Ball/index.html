@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #010101;
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        display: flex;
+        width: 300px;
+        height: 100px;
+        background-color: #fff;
+        align-items: end;
+        justify-content: center;
+        /* gap: 20px; */
+    }
+
+    .bounce {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background: red;
+        border-radius: 50%;
+        animation: bounce 0.5s infinite ease;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-40px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .bounce2 {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        animation: bounce2 0.5s infinite ease;
+        margin-left: -20px;
+    }
+
+    @keyframes bounce2 {
+        0% {
+            transform: translateY(20px);
+        }
+
+        50% {
+            transform: translateY(60px);
+        }
+
+        100% {
+            transform: translateY(20px);
+        }
+    }
+</style>
+
+<body>
+    <div class="box">
+        <span class="bounce"></span>
+        <span class="bounce2"></span>
+    </div>
+</body>
+
+</html>
