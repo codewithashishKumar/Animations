@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Lights</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        min-height: 100vh;
+    }
+
+    .allLights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: #333;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .red,
+    .yellow,
+    .green {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        opacity: 0.2;
+        animation: lights 6s infinite;
+    }
+
+    .red {
+        background: red;
+        animation-delay: 0s;
+
+    }
+
+    .yellow {
+        background: yellow;
+        animation-delay: 2s;
+    }
+
+    .green {
+        background: green;
+        animation-delay: 4s;
+    }
+
+    @keyframes lights {
+
+        0%,
+        20% {
+            filter: drop-shadow(0 0 15px currentColor);
+            opacity: 1;
+        }
+
+        100% {
+            filter: none;
+            opacity: 0.2;
+        }
+    }
+</style>
+
+<body>
+    <section class="allLights">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </section>
+</body>
+
+</html>
