@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cardContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        border: 2px solid;
+        height: 400px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+        flex-direction: column;
+    }
+
+    .cardOne {
+        background: linear-gradient(135deg,
+                #6366f1 0%,
+                #8b5cf6 50%,
+                #ec4899 100%);
+    }
+
+    .cardTwo {
+        background: radial-gradient(#22d3ee 0%,
+                #3b82f6 45%,
+                #1e293b 100%);
+    }
+
+    .cardThree {
+        background: conic-gradient(from 180deg at 50% 50%,
+                #f59e0b,
+                #ef4444,
+                #8b5cf6,
+                #06b6d4,
+                #f59e0b);
+
+    }
+
+    .cardOne:hover {
+        transform: translateY(-10px) translateX(10px) rotate(5deg);
+    }
+
+    .cardTwo:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 45px #000);
+    }
+
+    .cardThree:hover {
+        animation: slideIN 4s linear;
+    }
+
+    @keyframes slideIN {
+        0% {
+            transform: translateY(0);
+        }
+
+        25% {
+            transform: translateY(400px);
+        }
+
+        50% {
+            transform: translateY(400px) translateX(-400px);
+        }
+
+        75% {
+            transform: translateY(0px) translateX(-400px);
+        }
+
+        100% {
+            transform: translateY(0px) translateX(0px);
+        }
+    }
+</style>
+
+<body>
+    <section class="cardContainer">
+        <div class="card cardOne"><span>Card 1</span><span>linear-gradient</span></div>
+        <div class="card cardTwo"><span>Card 2</span><span>radial-gradient</span></div>
+        <div class="card cardThree"><span>Card 3</span><span>conic-gradient</span></div>
+    </section>
+</body>
+
+</html>
