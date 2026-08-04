@@ -180,3 +180,26 @@ justify-content-evenly
 +------------------------------------------------------+
 |------A------B------C------|
 +------------------------------------------------------+
+
+----------------------------------------------------------------------------
+align-items-* is a Bootstrap Flexbox utility that controls the alignment of flex items along the cross axis (vertical axis when flex-direction: row).
+
+
+align-items-start → Person stands at the top.
+align-items-center → Person stands in the middle.
+align-items-end → Person stands at the bottom.
+
+
+----------------------------------------------------------------------------
+flex-row is a Bootstrap Flexbox utility that arranges flex items horizontally from left to right by applying flex-direction: row.
+
+flex-column is a Bootstrap Flexbox utility that changes the flex direction from horizontal (row) to vertical (column) by applying flex-direction: column.
+
+| `flex-direction`  | Main Axis  | Cross Axis | `justify-content` | `align-items` |
+| ----------------- | ---------- | ---------- | ----------------- | ------------- |
+| `row` *(default)* | Horizontal | Vertical   | Left ↔ Right      | Top ↕ Bottom  |
+| `column`          | Vertical   | Horizontal | Top ↕ Bottom      | Left ↔ Right  |
+
+
+----------------------------------------------------------------------------
+flex-wrap is a Bootstrap Flexbox utility that allows flex items to move onto the next line when there isn't enough space in the container.
