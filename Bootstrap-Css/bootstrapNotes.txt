@@ -143,6 +143,7 @@ Bootstrap spacing utilities are predefined classes that add margin (m) and paddi
 | `me-3` | Margin End (Right in LTR languages)  |
 | `mx-3` | Left & Right Margin                  |
 | `my-3` | Top & Bottom Margin                  |
+
 Padding follows the same pattern:
 pt
 pb
@@ -150,3 +151,32 @@ ps
 pe
 px
 py
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+What is d-flex ?
+
+d-flex is a Bootstrap utility class that applies display: flex to an element, making it a Flexbox container.
+----------------------------------------------------------------------------
+
+
+justify-content-* is a Bootstrap Flexbox utility that controls the horizontal alignment and distribution of flex items along the main axis.
+
+| Class                     | Start Edge      | Between Items | End Edge        |
+| ------------------------- | --------------- | ------------- | --------------- |
+| `justify-content-between` | ❌ No space      | ✅ Equal       | ❌ No space      |
+| `justify-content-around`  | ✅ Half-size gap | ✅ Equal       | ✅ Half-size gap |
+| `justify-content-evenly`  | ✅ Equal gap     | ✅ Equal       | ✅ Equal         |
+
+justify-content-between
++------------------------------------------------------+
+|A----------------------B----------------------------C|
++------------------------------------------------------+
+justify-content-around
++------------------------------------------------------+
+|----A-----------B-----------C----|
++------------------------------------------------------+
+justify-content-evenly
++------------------------------------------------------+
+|------A------B------C------|
++------------------------------------------------------+
