@@ -1,0 +1,61 @@
+
+----------------------------------------------------------------------------
+What is a Card?
+A Bootstrap Card is a flexible content container that is used to display related information together in a clean and organized way.
+
+A card can contain one or more of the following:
+Image
+Title
+Text
+Buttons
+Links
+Header
+Footer
+Lists
+Other Bootstrap components
+
+The main idea is that everything related to one item is grouped inside a single card.
+
+Card
+│
+├── Border
+├── Rounded corners
+├── Padding (through card-body)
+└── Organized content
+
+Bootstrap has semantic classes:
+card
+card-body
+card-title
+card-subtitle
+card-text
+card-header
+card-footer
+card-img-top
+
+
+----------------------------------------------------------------------------
+card-img-top
+
+card-img-top is a Bootstrap class used to place an image at the top of a card. The image automatically spans the full width of the card and aligns with its rounded top corners.
+
+What Does card-img-top Do?
+
+Bootstrap automatically:
+
+✅ Makes the image width 100% of the card
+✅ Aligns it with the top of the card
+✅ Applies matching rounded corners at the top
+✅ Keeps it responsive
+
+Task 1  - Requirements:
+
+Your card should have:
+
+A card container
+A laptop image at the top
+Product title
+Product description
+Price
+A "Buy Now" button
+Card width should be controlled (not full screen)
