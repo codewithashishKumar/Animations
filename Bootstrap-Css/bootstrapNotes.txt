@@ -203,3 +203,18 @@ flex-column is a Bootstrap Flexbox utility that changes the flex direction from 
 
 ----------------------------------------------------------------------------
 flex-wrap is a Bootstrap Flexbox utility that allows flex items to move onto the next line when there isn't enough space in the container.
+
+
+----------------------------------------------------------------------------
+Bootstrap Button Variants (btn-*)
+
+Button variants are predefined Bootstrap classes that change the appearance (color and styling) of a button to represent different purposes or actions.
+
+Outline Buttons (btn-outline-*)
+Outline button variants are Bootstrap button styles that display a colored border and text instead of a filled background. The background becomes colored when the user hovers over the button.
+
+
+----------------------------------------------------------------------------
+Full-Width Buttons (w-100)
+
+w-100 is a Bootstrap width utility that makes an element occupy 100% of its parent's available width.
