@@ -11,7 +11,8 @@
         crossorigin="anonymous"></script>
     <title>Bootstrap Cards</title>
 </head>
-<style></style>
+<style>
+</style>
 
 <body>
     <section>
@@ -23,7 +24,8 @@
         </div>
     </section>
     <section>
-        <div class="card">
+        <h2>Cards Body</h2>
+        <div class="card m-2 border border-dark border-2 rounded-4">
             <div class="card-body">
 
                 <h5 class="card-title bg-warning">
@@ -42,8 +44,8 @@
         </div>
     </section>
     <section>
+        <h4>Card Image Top and Body</h4>
         <div class="card w-25">
-
             <img src="/Logo.png" class="card-img-top" alt="Logo">
 
             <div class="card-body">
@@ -64,11 +66,88 @@
         <h3>This was task to create till yet</h3>
         <div class="card">
             <img src="/Logo.png" alt="Logo" class="card-img-top">
-            <div class="card-body">
+            <div class="card-body bg-dark text-light">
                 <h5 class="card-title">Image Title here</h5>
                 <p class="card-text">Some content about the image here</p>
-                <button class="btn btn-info">Buy Now</button>
+                <button class="btn btn-primary text-light">Buy Now</button>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <h4>Card Image Bottom and Body</h4>
+        <div class="card w-25">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    iPhone 16
+                </h5>
+
+                <p class="card-text">
+                    ₹79,999
+                </p>
+
+            </div>
+            <img src="/Logo.png" class="card-img-top" alt="Logo">
+
+        </div>
+    </section>
+    <section class="w-50 border border-info rounded-3 m-4">
+        <h4>Card header + body</h4>
+        <div class="card">
+
+            <div class="card-header">
+                User Profile
+            </div>
+
+
+            <div class=" card-body">
+
+                <h5 class="card-title">
+                    John Doe
+                </h5>
+
+                <p class="card-text">
+                    Frontend Developer
+                </p>
+
+                <button class="btn btn-primary">
+                    Contact
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="w-50 border border-danger rounded-3 m-4">
+        <h4>Card header + body + footer</h4>
+        <div class="card">
+
+            <div class="card-header border border-0">
+                User Profile
+            </div>
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    John Doe
+                </h5>
+
+                <p class="card-text">
+                    Frontend Developer
+                </p>
+
+                <button class="btn btn-primary">
+                    Contact
+                </button>
+
+            </div>
+
+            <div class="card-footer">
+                Last updated 2 hours ago
+            </div>
+
         </div>
     </section>
 </body>

@@ -59,3 +59,22 @@ Product description
 Price
 A "Buy Now" button
 Card width should be controlled (not full screen)
+
+
+| Class             | Position                |
+| ----------------- | ----------------------- |
+| `card-img-top`    | Image above `card-body` |
+| `card-img-bottom` | Image below `card-body` |
+
+
+----------------------------------------------------------------------------
+card-header
+
+
+card-header is a Bootstrap class used to create a header section at the top of a card. It is generally used for labels, titles, categories, or section names.
+Think of it as the heading area of the card, separate from the main content.
+
+----------------------------------------------------------------------------
+card-footer
+
+card-footer is a Bootstrap class used to create a footer section at the bottom of a card. It is commonly used for additional information, actions, timestamps, or secondary details.
