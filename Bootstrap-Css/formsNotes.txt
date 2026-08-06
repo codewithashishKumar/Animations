@@ -1,0 +1,56 @@
+----------------------------------------------------------------------------
+Forms -
+A form is a section of a webpage that allows users to enter information and send it to a website or application.
+A form is used whenever a website needs information from the user.
+
+----------------------------------------------------------------------------
+
+Textarea - A textarea is used when the user needs to enter multiple lines of text.
+note - for input and textarea we use form-control 
+----------------------------------------------------------------------------
+
+Select Menu -A select menu allows users to choose one option from a list.
+form-select
+----------------------------------------------------------------------------
+
+
+| Element      | Bootstrap Class |
+| ------------ | --------------- |
+| `<input>`    | `form-control`  |
+| `<textarea>` | `form-control`  |
+| `<select>`   | `form-select`   |
+
+
+----------------------------------------------------------------------------
+
+Checkbox - A checkbox allows users to select or deselect an option.
+
+
+Bootstrap styles checkboxes using three classes:
+form-check - Creates the checkbox group.
+form-check-input -Styles the actual checkbox.
+form-check-label - Styles the text beside the checkbox.
+
+----------------------------------------------------------------------------
+
+Radio Buttons - A radio button lets users choose only one option from a group.
+
+----------------------------------------------------------------------------
+Switch - A switch is a visual version of a checkbox that represents an on/off state.
+Bootstrap creates switches by styling a checkbox.
+
+----------------------------------------------------------------------------
+
+Form Buttons - A button is an interactive element that allows the user to perform an action.
+Bootstrap creates switches by styling a checkbox.
+
+
+----------------------------------------------------------------------------
+
+| Element  | disabled | readonly |
+| -------- | -------- | -------- |
+| Input    | ✅        | ✅        |
+| Textarea | ✅        | ✅        |
+| Select   | ✅        | ❌        |
+| Checkbox | ✅        | ❌        |
+| Radio    | ✅        | ❌        |

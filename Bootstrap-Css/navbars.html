@@ -30,25 +30,66 @@
     </section>
     <section>
         <h4>Responsive Navbar</h4>
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a href="#" class="navbar-brand text-light">Brand Name</a>
-                <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="menu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-light">Home</a>
+                            <a href="#" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-light active">About</a>
+                            <a href="#" class="nav-link ">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-light disabled">Contact</a>
+                            <a href="#" class="nav-link disabled">Contact</a>
                         </li>
                     </ul>
                 </div>
+            </div>
+        </nav>
+    </section>
+    <section class="m-4">
+        <h4>Navbar Dropdowns</h4>
+        <nav class="navbar navbar-expand-md bg-info navbar-light">
+            <div class="container">
+                <a href="" class="navbar-brand">Dropdown</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <span class="dropdown-item">Web Development</span>
+                            <span class="dropdown-item">App Development</span>
+                            <span class="dropdown-item">SEO</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="m-3 p-3 border border-3 border-dark">
+        <h4>Navbar dropdown Task</h4>
+        <nav class="navbar navbar-expand-sm bg-warning">
+            <div class="container">
+                <a href="" class="navbar-brand">Brand Name</a>
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <span class="dropdown-item">Solo Service</span>
+                            <span class="dropdown-item">Group Service</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
     </section>
