@@ -1,0 +1,333 @@
+==================================================
+STEP 1 : BASIC CAROUSEL STRUCTURE
+==================================================
+
+Definition:
+-----------
+A Carousel is a Bootstrap component used to display one
+slide at a time. It is commonly used for banners,
+image sliders, testimonials, and featured content.
+
+Bootstrap Classes:
+------------------
+carousel
+    → Main container of the carousel.
+
+carousel-inner
+    → Holds all the carousel slides.
+
+Hierarchy:
+----------
+carousel
+└── carousel-inner
+
+Syntax:
+-------
+<div class="carousel">
+    <div class="carousel-inner">
+
+    </div>
+</div>
+
+Important Notes:
+----------------
+• carousel is the parent container.
+• carousel-inner contains all slides.
+• Without carousel-inner, the carousel cannot
+  display any items.
+• No slides or images are added in this step.
+
+==================================================
+STEP 2 : CAROUSEL ITEM
+==================================================
+
+Definition:
+-----------
+A Carousel Item represents one slide inside the carousel.
+Each image or content block occupies one carousel-item.
+
+Bootstrap Class:
+----------------
+carousel-item
+    → Represents a single slide.
+
+Hierarchy:
+----------
+carousel
+└── carousel-inner
+    ├── carousel-item
+    ├── carousel-item
+    └── carousel-item
+
+Syntax:
+-------
+<div class="carousel">
+    <div class="carousel-inner">
+
+        <div class="carousel-item">
+
+        </div>
+
+    </div>
+</div>
+
+Important Notes:
+----------------
+• Every slide must have the class carousel-item.
+• carousel-item must always be inside carousel-inner.
+• A carousel can have one or multiple carousel-items.
+• Images, text, cards, or any HTML can be placed
+  inside a carousel-item.
+
+==================================================
+STEP 3 : ACTIVE CAROUSEL ITEM
+==================================================
+
+Definition:
+-----------
+A Carousel must have one active slide.
+
+The active slide is the first slide shown when
+the page loads.
+
+Bootstrap Class:
+----------------
+active
+    → Makes a carousel-item visible initially.
+
+Hierarchy:
+----------
+carousel
+└── carousel-inner
+    ├── carousel-item active
+    ├── carousel-item
+    ├── carousel-item
+    └── carousel-item
+
+Syntax:
+-------
+<div class="carousel-item active">
+
+</div>
+
+Important Notes:
+----------------
+• Only ONE carousel-item should have the active class.
+• If no item is active, the carousel will not display
+  any slide initially.
+• If multiple items have active, the carousel behaves
+  unexpectedly.
+• Usually the first slide is marked as active.
+
+Real World Usage:
+-----------------
+Product Slider
+    Image 1 (active)
+    Image 2
+    Image 3
+
+Website Banner
+    Banner 1 (active)
+    Banner 2
+    Banner 3
+
+
+==================================================
+STEP 4 : ADDING IMAGES TO CAROUSEL
+==================================================
+
+Definition:
+-----------
+A carousel-item is usually used to display an image.
+
+Bootstrap recommends using an <img> element inside
+every carousel-item.
+
+Bootstrap Classes:
+------------------
+d-block
+    → Makes the image a block element.
+
+w-100
+    → Sets the image width to 100% of its parent.
+
+Hierarchy:
+----------
+carousel
+└── carousel-inner
+    ├── carousel-item active
+    │   └── img
+    ├── carousel-item
+    │   └── img
+    └── carousel-item
+        └── img
+
+Syntax:
+-------
+<div class="carousel-item active">
+    <img src="image1.jpg" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+    <img src="image2.jpg" class="d-block w-100">
+</div>
+
+Important Notes:
+----------------
+• Every carousel-item usually contains one image.
+• d-block converts the image into a block element.
+• w-100 makes the image occupy the full width of
+  the carousel.
+• Both classes are almost always used together.
+• The active carousel-item should also contain an image.
+
+Real World Usage:
+-----------------
+Product Slider
+    → Product Image 1
+    → Product Image 2
+    → Product Image 3
+
+Website Banner
+    → Banner 1
+    → Banner 2
+    → Banner 3
+
+==================================================
+STEP 5 : PREVIOUS & NEXT CONTROLS
+==================================================
+
+Definition:
+-----------
+Previous & Next Controls allow users to move
+between carousel slides manually.
+
+Bootstrap Classes:
+------------------
+carousel-control-prev
+    → Previous button.
+
+carousel-control-next
+    → Next button.
+
+carousel-control-prev-icon
+    → Previous arrow icon.
+
+carousel-control-next-icon
+    → Next arrow icon.
+
+Bootstrap Attributes:
+---------------------
+data-bs-slide="prev"
+    → Moves to previous slide.
+
+data-bs-slide="next"
+    → Moves to next slide.
+
+data-bs-target="#carouselID"
+    → Specifies which carousel to control.
+
+Hierarchy:
+----------
+carousel
+├── carousel-inner
+├── Previous Button
+└── Next Button
+
+Syntax:
+-------
+<button class="carousel-control-prev"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon"></span>
+
+</button>
+
+<button class="carousel-control-next"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next">
+
+    <span class="carousel-control-next-icon"></span>
+
+</button>
+
+Important Notes:
+----------------
+• The carousel must have an id.
+• data-bs-target must match that id.
+• Previous uses:
+      data-bs-slide="prev"
+• Next uses:
+      data-bs-slide="next"
+• Bootstrap automatically provides the arrow icons.
+
+Real World Usage:
+-----------------
+◀ Previous Image      Next Image ▶
+
+Users can manually browse slides.
+
+
+==================================================
+STEP 6 : CAROUSEL CAPTIONS
+==================================================
+
+Definition:
+-----------
+Carousel Captions display text over a carousel slide.
+
+They are commonly used for:
+
+• Hero Sections
+• Product Banners
+• Advertisements
+• Portfolio Sliders
+
+Bootstrap Class:
+----------------
+carousel-caption
+    → Displays text over the image.
+
+Hierarchy:
+----------
+carousel
+└── carousel-inner
+    └── carousel-item
+        ├── img
+        └── carousel-caption
+
+Syntax:
+-------
+<div class="carousel-item active">
+
+    <img src="image.jpg" class="d-block w-100">
+
+    <div class="carousel-caption">
+        <h5>Heading</h5>
+        <p>Description</p>
+    </div>
+
+</div>
+
+Important Notes:
+----------------
+• carousel-caption is placed inside carousel-item.
+• It comes after the image.
+• Bootstrap automatically positions the caption
+  over the image.
+• Each slide can have its own caption.
+• A caption can contain headings, paragraphs,
+  buttons, or any HTML.
+
+Real World Usage:
+-----------------
+Image
+----------------------------
+Summer Sale
+Up to 50% Off
+
+Image
+----------------------------
+New Collection
+Shop Now

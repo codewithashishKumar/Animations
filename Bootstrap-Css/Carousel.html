@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>Carousel</title>
+</head>
+
+<body>
+    <section class="m-2 border border-2 border-dark rounded-3 p-3">
+        <h4>Carousel Syntax</h4>
+        <div class="carousel" id="firstCarousel" data-bs-ride="carousel" data-bs-interval="1500">
+            <div class="carousel-indicators">
+                <button data-bs-target="#firstCarousel" data-bs-slide-to="0"></button>
+                <button data-bs-target="#firstCarousel" data-bs-slide-to="1" class="active"></button>
+                <button data-bs-target="#firstCarousel" data-bs-slide-to="2"></button>
+                <button data-bs-target="#firstCarousel" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="/dots.png" alt="" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Dots</h5>
+                        <p>Simple background pattern</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="/Background.png" alt="" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Welcome</h5>
+                        <p>Bootstrap Carousel Demo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/flower.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Nature</h5>
+                        <p>Beautiful Flower</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Logo.png" alt="" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Logo</h5>
+                        <p>Brand Identity</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#firstCarousel"><span
+                    class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#firstCarousel"><span
+                    class="carousel-control-next-icon"></span></button>
+        </div>
+    </section>
+</body>
+
+</html>
