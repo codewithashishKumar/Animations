@@ -1,0 +1,18 @@
+----------------------------------------------------------------------------
+Navbar - Navbar is a Bootstrap component used to create website navigation menus.
+
+
+Extra Small (xs)  → collapsed
+Small (sm)        → collapsed
+Medium (md)       → collapsed
+Large (lg)        → expanded
+Extra Large (xl)  → expanded
+XXL               → expanded
+
+| Class               | Expanded on                   | Collapsed below        |
+| ------------------- | ----------------------------- | ---------------------- |
+| `navbar-expand-sm`  | `sm`, `md`, `lg`, `xl`, `xxl` | `xs`                   |
+| `navbar-expand-md`  | `md`, `lg`, `xl`, `xxl`       | `xs`, `sm`             |
+| `navbar-expand-lg`  | `lg`, `xl`, `xxl`             | `xs`, `sm`, `md`       |
+| `navbar-expand-xl`  | `xl`, `xxl`                   | `xs`, `sm`, `md`, `lg` |
+| `navbar-expand-xxl` | `xxl`                         | Everything below `xxl` |

@@ -44,6 +44,8 @@ Bootstrap Container
 A Bootstrap container is a layout wrapper that provides horizontal padding and controls the width of the content, helping align and organize the page.
 
 
+
+
 container → Controls the page width.
 row → Creates a horizontal row.
 col-md-6 → Makes two equal columns on medium and larger screens.
@@ -71,6 +73,15 @@ A breakpoint is a predefined screen width at which Bootstrap changes the layout 
 | `col-xl-`  | Extra Large       | Extra-large screens and larger  |
 | `col-xxl-` | Extra Extra Large | Very large screens and larger   |
 
+| Container Type     | Extra Small (<576px) | Small (≥576px) | Medium (≥768px) | Large (≥992px) | X-Large (≥1200px) | XX-Large (≥1400px) |
+| ------------------ | -------------------- | -------------- | --------------- | -------------- | ----------------- | ------------------ |
+| `.container`       | 100%                 | 540px          | 720px           | 960px          | 1140px            | 1320px             |
+| `.container-sm`    | 100%                 | 540px          | 720px           | 960px          | 1140px            | 1320px             |
+| `.container-md`    | 100%                 | 100%           | 720px           | 960px          | 1140px            | 1320px             |
+| `.container-lg`    | 100%                 | 100%           | 100%            | 960px          | 1140px            | 1320px             |
+| `.container-xl`    | 100%                 | 100%           | 100%            | 100%           | 1140px            | 1320px             |
+| `.container-xxl`   | 100%                 | 100%           | 100%            | 100%           | 100%              | 1320px             |
+| `.container-fluid` | 100%                 | 100%           | 100%            | 100%           | 100%              | 100%               |
 
 
 Note - Bootstrap breakpoints are mobile-first and work upward.

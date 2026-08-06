@@ -78,3 +78,5 @@ Think of it as the heading area of the card, separate from the main content.
 card-footer
 
 card-footer is a Bootstrap class used to create a footer section at the bottom of a card. It is commonly used for additional information, actions, timestamps, or secondary details.
+
+----------------------------------------------------------------------------
