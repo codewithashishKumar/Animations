@@ -1,0 +1,14 @@
+An Input Group is a Bootstrap component that combines an input field with extra content attached before or after it.
+input-group
+    |
+    ├── input-group-text
+    |
+    └── form-control
+
+
+Bootstrap allows buttons inside input-group.
+input-group
+    |
+    ├── input
+    |
+    └── button

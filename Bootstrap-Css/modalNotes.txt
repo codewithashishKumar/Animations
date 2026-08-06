@@ -1,0 +1,53 @@
+Modal
+
+A Modal is a popup window that appears on top of the current page without navigating to another page.
+The user must interact with it (close it or complete an action) before returning to the main page.
+
+
+A Bootstrap modal is made of five main parts.
+
+Modal
+│
+├── modal
+│
+├── modal-dialog
+│
+├── modal-content
+│
+├── modal-header
+│
+├── modal-body
+│
+└── modal-footer
+
+
+Centered Modal
+By default, a modal appears near the top of the screen.
+A centered modal appears in the middle of the viewport.
+
+
+
+Scrollable Modal
+Sometimes the content inside a modal is too long.
+Without a scrollable modal:
+
+
+Complete Login Modal
+A login modal lets users sign in without leaving the current page.
+Instead of navigating to a new page, the login form appears as a popup.
+
+Examples:
+E-commerce websites
+Dashboards
+Admin panels
+Portfolio websites
+
+
+Static Backdrop Modal
+
+data-bs-backdrop="static"
+This prevents closing the modal by clicking outside.
+
+
+To also disable the Esc key:
+data-bs-keyboard="false"

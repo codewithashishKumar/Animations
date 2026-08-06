@@ -1,0 +1,19 @@
+A badge is a small label used to display additional information, status, counts, or categories.
+
+bg-primary
+bg-success
+bg-danger
+bg-warning
+
+badge
+ +
+background color
+
+| Class        | Use              |
+| ------------ | ---------------- |
+| `bg-primary` | Main information |
+| `bg-success` | Success/active   |
+| `bg-danger`  | Error/delete     |
+| `bg-warning` | Warning          |
+| `bg-info`    | Information      |
+| `bg-dark`    | Dark label       |

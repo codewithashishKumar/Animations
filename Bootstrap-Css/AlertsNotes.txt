@@ -1,0 +1,18 @@
+Alerts - An alert is a message box used to provide information, warnings, success messages, or errors to users.
+
+Base class: alert
+
+Gives:
+padding
+border
+rounded appearance
+
+
+| Class             | Use               |
+| ----------------- | ----------------- |
+| `alert-success`   | Successful action |
+| `alert-danger`    | Error/problem     |
+| `alert-warning`   | Warning           |
+| `alert-info`      | Information       |
+| `alert-primary`   | Important message |
+| `alert-secondary` | Secondary message |
